@@ -15,7 +15,7 @@ class Conexion:
 
     @classmethod
     def obtenerPool(cls):
-        if cls._pool == None:
+        if cls._pool is None:
             try:
                 cls._pool = pool.SimpleConnectionPool(cls._MIN_CON, cls._MAX_CON,
                                                       host= cls._HOST,
